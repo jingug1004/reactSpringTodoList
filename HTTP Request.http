@@ -1,0 +1,14 @@
+# http://localhost:8080/test/testRequestBody
+#GET http://localhost:8080/test/testRequestBody
+#Content-Type: application/json
+#
+#{
+#  "id": 123,
+#  "message": "sdfs"
+#}
+
+#
+GET http://localhost:8080/todo/test
+Content-Type: application/json
+
+
