@@ -8,7 +8,24 @@
 #}
 
 #
-GET http://localhost:8080/todo/test
+#GET http://localhost:8080/todo/test
+#Content-Type: application/json
+
+###
+POST localhost:8080/auth/signup
 Content-Type: application/json
 
+{
+  "email": "hello@world.com",
+  "username": "user1",
+  "password": "12345"
+}
 
+###
+POST localhost:8080/auth/signin
+Content-Type: application/json
+
+{
+  "email": "hello@world.com",
+  "password": "12345"
+}
