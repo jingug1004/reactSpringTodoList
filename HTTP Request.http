@@ -8,15 +8,16 @@
 #}
 
 #
-#GET http://localhost:8080/todo/test
-#Content-Type: application/json
+#GET http://localhost:8080/todo
+#Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0MDI4OTE4MjdjYjAwZWM4MDE3Y2IwMTAxNDZiMDAwMCIsImlzcyI6ImRlbW8gYXBwIiwiaWF0IjoxNjM1MDQxNDIwLCJleHAiOjE2MzUxMjc4MjB9.ewJifq8m0DicEqPWkYu_CJGKdMg7z6PUnP9zNYIAg-tw2rUPaS9tBWNwgi45EOVQu14-CC490JEe6G-NEMDM1Q
+##Content-Type: application/json
 
 ###
 POST localhost:8080/auth/signup
 Content-Type: application/json
 
 {
-  "email": "hello@world.com",
+  "email": "hello2@world.com",
   "username": "user1",
   "password": "12345"
 }
@@ -26,7 +27,16 @@ POST localhost:8080/auth/signin
 Content-Type: application/json
 
 {
-  "email": "hello@world.com",
+  "email": "hello2@world.com",
   "password": "12345"
+}
+
+###
+POST http://localhost:8080/todo
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0MDI4OTE4MjdjYjAzZDI1MDE3Y2IwM2UyZGY3MDAwMSIsImlzcyI6ImRlbW8gYXBwIiwiaWF0IjoxNjM1MDQ0NDQxLCJleHAiOjE2MzUxMzA4NDF9.u8WYFq7j7pF3KIb_VnEj5Uktq5AJ4N4bKR3hdjqpzyD7qohplorn54RAHon5COojuhKeujWe10ib-EkQvlUKtw
+
+{
+  "title": "공부하기 4"
 }
 
