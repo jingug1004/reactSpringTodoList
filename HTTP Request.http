@@ -17,9 +17,9 @@ POST localhost:8080/auth/signup
 Content-Type: application/json
 
 {
-  "email": "hello2@world.com",
+  "email": "a@a.a",
   "username": "user1",
-  "password": "12345"
+  "password": "1"
 }
 
 ###
@@ -34,9 +34,9 @@ Content-Type: application/json
 ###
 POST http://localhost:8080/todo
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0MDI4OTE4MjdjYjAzZDI1MDE3Y2IwM2UyZGY3MDAwMSIsImlzcyI6ImRlbW8gYXBwIiwiaWF0IjoxNjM1MDQ0NDQxLCJleHAiOjE2MzUxMzA4NDF9.u8WYFq7j7pF3KIb_VnEj5Uktq5AJ4N4bKR3hdjqpzyD7qohplorn54RAHon5COojuhKeujWe10ib-EkQvlUKtw
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0MDI4OTE4MjdjYzFmNjEzMDE3Y2MxZmM2MmI4MDAwMCIsImlzcyI6ImRlbW8gYXBwIiwiaWF0IjoxNjM1MzQyMTE5LCJleHAiOjE2MzU0Mjg1MTl9.OFWWKNL5fsP1duh-aimmmex_mY1qd0Iw4fCnkOJSpLKNZuYESw38LccZnyaw5mdYjSfaNBDbNElrt_RQ0Ge2Gg
 
 {
-  "title": "공부하기 4"
+  "title": "공부하기 3"
 }
 
