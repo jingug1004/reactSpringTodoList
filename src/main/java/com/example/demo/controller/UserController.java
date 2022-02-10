@@ -84,6 +84,7 @@ Response code: 200; Time: 984ms; Content length: 342 bytes
             final String token = tokenProvider.create(user);
             final UserDTO responseUserDTO = UserDTO.builder()
                     .email(user.getEmail())
+                    .username(user.getUsername())
                     .id(user.getId())
                     .token(token)
                     .build();
