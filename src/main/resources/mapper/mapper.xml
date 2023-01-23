@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.User2Mapper">
+
+    <select id="findAll" resultType="HashMap">
+        select *
+        from m_member
+    </select>
+
+
+    <select id="findInArrayClass" resultType="com.example.demo.VO.MembVO">
+        select *
+        from m_member
+        where 1 = 1
+          and mid like CONCAT('%', #{mid}, '%')
+    </select>
+
+</mapper>

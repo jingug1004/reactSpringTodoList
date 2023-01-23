@@ -27,8 +27,8 @@ POST localhost:8080/auth/signin
 Content-Type: application/json
 
 {
-  "email": "hello2@world.com",
-  "password": "12345"
+  "email": "a@a.a",
+  "password": "1"
 }
 
 ###
