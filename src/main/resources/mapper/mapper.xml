@@ -5,10 +5,19 @@
     <select id="findAll" resultType="HashMap">
         select *
         from m_member
+        where 1 = 1
+          and mid like CONCAT('%', #{mid}, '%')
     </select>
 
 
     <select id="findInArrayClass" resultType="com.example.demo.VO.MembVO">
+        select *
+        from m_member
+        where 1 = 1
+          and mid like CONCAT('%', #{mid}, '%')
+    </select>
+
+    <select id="findResultTypeMap" resultType="HashMap">
         select *
         from m_member
         where 1 = 1
