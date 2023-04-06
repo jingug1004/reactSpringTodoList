@@ -17,7 +17,7 @@
           and mid like CONCAT('%', #{mid}, '%')
     </select>
 
-    <select id="findResultTypeMap" resultType="HashMap">
+    <select id="findResultTypeMap" resultType="map">
         select *
         from m_member
         where 1 = 1

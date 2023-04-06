@@ -35,7 +35,7 @@ dependencies {
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
-    runtimeOnly 'mysql:mysql-connector-java:8.0.25'
+//    runtimeOnly 'mysql:mysql-connector-java:8.0.25'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     compileClasspath group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
     implementation 'junit:junit:4.13.1'
@@ -47,6 +47,7 @@ dependencies {
     /** dev tools*/
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'mysql:mysql-connector-java'
 }
 
 dependencyManagement {
